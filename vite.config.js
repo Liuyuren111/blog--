@@ -6,7 +6,7 @@ import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import {ElementPlusResolver} from "unplugin-vue-components/resolvers";
 import legacyPlugin from '@vitejs/plugin-legacy' // IE11和旧版chrome兼容
-import postcsspxtoviewport from 'postcss-px-to-viewport'
+// import postcsspxtoviewport from 'postcss-px-to-viewport'
 import {resolve} from "path";
 // https://vitejs.dev/config/
 // export default defineConfig({
@@ -75,6 +75,7 @@ export default defineConfig(({ mode }) => {
       port: 3000, // 指定服务器端口
       https: false, // 是否开启 https
       open: false, // 在服务器启动时自动在浏览器中打开应用程序
+      hmr: true,  // 开启热更新
       proxy: {
         "/api": {
           target: "http://jsonplaceholder.typicode.com",

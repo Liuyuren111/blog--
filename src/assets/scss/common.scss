@@ -1,0 +1,26 @@
+.display {
+  display: flex;
+}
+
+.display-align {
+  display: flex;
+  align-items: center;
+}
+
+.display-justify-align {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.ml-4 {
+  margin-left: 4px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
